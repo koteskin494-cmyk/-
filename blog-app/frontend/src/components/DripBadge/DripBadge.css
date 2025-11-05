@@ -1,0 +1,57 @@
+.drip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.7rem;
+}
+
+.drip-badge-small {
+  font-size: 0.6rem;
+  padding: 4px 8px;
+}
+
+.drip-badge-medium {
+  font-size: 0.7rem;
+  padding: 6px 12px;
+}
+
+.drip-badge-large {
+  font-size: 0.8rem;
+  padding: 8px 16px;
+}
+
+/* Категорийные стили */
+.drip-badge-streetwear {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.drip-badge-sneakers {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.drip-badge-luxury {
+  background: linear-gradient(135deg, #ffd700 0%, #ff6b00 100%);
+  color: black;
+}
+
+.drip-badge-watches {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.drip-badge-accessories {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: black;
+}
+
+.drip-badge-grooming {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+}

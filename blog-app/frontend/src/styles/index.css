@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --drip-black: #0a0a0a;
+  --drip-white: #ffffff;
+  --drip-gold: #ffd700;
+  --drip-silver: #c0c0c0;
+  --drip-red: #ff073a;
+  --drip-blue: #0077ff;
+  --drip-gray: #1a1a1a;
+  --drip-light-gray: #333333;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--drip-black);
+  color: var(--drip-white);
+  line-height: 1.6;
+}
+
+.drip-gradient {
+  background: linear-gradient(135deg, var(--drip-black) 0%, var(--drip-gray) 100%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--drip-gold) 0%, #ff6b00 100%);
+  color: var(--drip-black);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--drip-white);
+  border: 2px solid var(--drip-light-gray);
+}
+
+.btn-secondary:hover {
+  border-color: var(--drip-gold);
+  color: var(--drip-gold);
+}
+
+.drip-card {
+  background: var(--drip-gray);
+  border-radius: 12px;
+  border: 1px solid var(--drip-light-gray);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.drip-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--drip-gold);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Анимации */
+@keyframes dripGlow {
+  0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); }
+  100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+}
+
+.drip-glow {
+  animation: dripGlow 2s ease-in-out infinite;
+}
